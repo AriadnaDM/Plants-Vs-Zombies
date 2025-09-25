@@ -1,17 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class CoinsManager : MonoBehaviour
 {
-   [SerializedField]
-   private UnityEvent<int> onCoinsChanged;
+   [SerializeField]
+   private UnityEvent<string> onCoinsChanged;
     private int numberOfCoins = 0;
     public void SetNumberOfCoins(int amount)
     {
-        numberOfCoins = amoubnt;
-        onCoinsChanged.Invoke(numberOfCoins);
+        numberOfCoins = amount;
+        onCoinsChanged.Invoke(numberOfCoins.ToString());
     }
 
-    public boolCanBuy(int cost)
+    public bool CanBuy(int cost)
     {
         if (numberOfCoins >= cost)
         {
