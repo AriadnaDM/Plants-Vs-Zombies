@@ -55,7 +55,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1000, y: 850, z: 850}
+  m_Size: {x: 1000, y: 1142.4, z: 850}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5463346090694931066
 MonoBehaviour:
@@ -84,6 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   appearAnimationName: CoinAppear
   hideAnimationName: CoinDisappear
+  secondsActive: 3
 --- !u!95 &8771492317826241701
 Animator:
   serializedVersion: 7
