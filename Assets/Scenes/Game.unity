@@ -16084,6 +16084,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.73553264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.042438515
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6742566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.050682947
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.339
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 275
+      objectReference: {fileID: 0}
+    - target: {fileID: 7913805446137406915, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -7.573
+      objectReference: {fileID: 0}
     - target: {fileID: 8527001676370243238, guid: 58d3f25052f2ff740a53fe99f0d0070c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
