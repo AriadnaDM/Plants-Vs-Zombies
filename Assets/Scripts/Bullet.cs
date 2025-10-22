@@ -1,13 +1,14 @@
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Bullet : MonoBehaviour
 {
     [SerializeField]
     private float speed = 10f;
-
+    [SerializeField]
+    private float damage = 20f;
     [SerializeField]
 
-    private float damage = 20f;
+    private UnityEvent<Transform> onHitEnemy;
     private Rigidbody rigidbody;
     private void Awake()
     {
@@ -19,7 +20,7 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             Health enemyHealth = collision.gameObject.GetComponent<Health>();
             if (enemyHealth != null)
@@ -27,7 +28,14 @@ public class Bullet : MonoBehaviour
                 enemyHealth.TakeDamage(damage);
             }
             SoundManager.instance.Play("hit_object");
+            onHitEnemy?.Invoke(transform);
             gameObject.SetActive(false);
         }
+    }
+    
+    private void OnDisable()
+    {
+        rigidbody.linearVelocity = Vector3.zero;
+        rigidbody.angularVelocity = Vector3.zero;
     }
 }
