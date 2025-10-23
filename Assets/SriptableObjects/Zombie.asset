@@ -17,10 +17,10 @@ MonoBehaviour:
   attackDuration: 1.5
   health: 100
   speed: 350
-  damage: 10
+  damage: 20
   enemyName: Zombie
   attackAnimation: Attack
-  deathAnimation: Die
+  deathAnimation: Zombie Die
   walkAnimation: Zombie Walking
   hitAnimation: Hit
   winAnimation: Win
