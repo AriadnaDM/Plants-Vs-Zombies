@@ -8,6 +8,8 @@ TagManager:
   - FxTemporaire
   - JapaneseCoins
   - Enemy
+  - Step
+  - Floor
   layers:
   - Default
   - TransparentFX
