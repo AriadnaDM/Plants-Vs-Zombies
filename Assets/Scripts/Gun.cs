@@ -16,10 +16,12 @@ public class Gun : MonoBehaviour
     private float raycastOffset = 2f;
     [SerializeField]
     private Animator animator;
+    private Step currentStep;
     private bool _isActive = false;
     private bool isShooting = false;
     private Health enemyHealth;
     private Coroutine shootCoroutine;
+    
     public bool IsActive
     {
         set { _isActive = value; }
@@ -28,16 +30,18 @@ public class Gun : MonoBehaviour
     {
         enemyHealth = null;
         isShooting = false;
+        IsActive = false;
         health.InitializeHealth(gunData.maxHealth);
         animator.Play(gunData.idleAnimationName, 0, 0f);
-        //SoundManager.instance.Play(gunData.appearSoundName);
+        SoundManager.instance.Play(gunData.appearSoundName);
     }
     private void Update()
     {
         if(_isActive && !isShooting && health.CurrentHealth > 0)
         {
             Vector3 right = transform.TransformDirection(Vector3.right);
-            if (Physics.Raycast(transform.position + Vector3.up * raycastOffset, right, out RaycastHit hit, gunData.range, enemiesLayer))
+            Vector3 rayOrigin = transform.position + Vector3.up * raycastOffset;
+            if (Physics.Raycast(rayOrigin, right, out RaycastHit hit, gunData.range, enemiesLayer))
             {
                 isShooting = true;
                 enemyHealth = hit.collider.GetComponent<Health>();
@@ -64,6 +68,8 @@ public class Gun : MonoBehaviour
         {
             StopCoroutine(shootCoroutine);
         }
+        currentStep.IsOccupied = false;
+        currentStep = null;
         animator.Play(gunData.dieAnimationName, 0, 0f);
         isShooting = false;
         enemyHealth = null;
