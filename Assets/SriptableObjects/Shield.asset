@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   maxHealth: 150
-  idleAnimationName: Idle
-  dieAnimationName: Die
-  appearSoundName: shield_appear
-  dieSoundName: shield_idle
+  actionAssets:
+  - soundName: 
+    animationName: Idle
+    actionKey: 0
+  - soundName: Appear
+    animationName: Appear
+    actionKey: 4
+  - soundName: 'Hit '
+    animationName: Hit
+    actionKey: 3
+  - soundName: Die
+    animationName: Die
+    actionKey: 5

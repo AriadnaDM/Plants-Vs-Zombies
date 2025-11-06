@@ -3,19 +3,19 @@ using System.Collections;
 public class BasePlant : MonoBehaviour
 {
     [SerializeField]
-    protected Health health;
+    public Health health;
     public Health Health => health;
     [SerializeField]
-    protected Animator animator;
+    public Animator animator;
     [SerializeField]
-    protected Collider collider;
-    protected Step currentStep;
+    public Collider collider;
+    public Step currentStep;
     public Step CurrentStep
     {
         set { currentStep = value; }
     }
     protected bool isActive;
-    public bool _isActive
+    public bool IsActive
     {
         set
         {
