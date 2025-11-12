@@ -1577,7 +1577,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   laneManager: {fileID: 1459662814}
-  spawnInterval: 6
+  spawnInterval: 15
   offsetY: 500
 --- !u!4 &132889586
 Transform:
@@ -9153,7 +9153,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   laneManager: {fileID: 1459662814}
-  spawnInterval: 3
+  spawnInterval: 9
   offsetY: 500
 --- !u!4 &1172098827
 Transform:
@@ -17979,6 +17979,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1545808841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5911840733115597987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5360
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 333.1588
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 266.51535
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 662639598746032621, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4251713444927845657, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_Name
+      value: Flower
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274227893068402595, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274227893068402595, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5274227893068402595, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168952714914936314, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9168952714914936314, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03db6faae1f22b5429c78a602e8ce68b, type: 3}
 --- !u!1001 &8302243581076258579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18080,3 +18157,4 @@ SceneRoots:
   - {fileID: 1442142975}
   - {fileID: 979798657}
   - {fileID: 1342390030}
+  - {fileID: 5911840733115597987}

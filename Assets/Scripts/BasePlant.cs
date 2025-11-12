@@ -2,8 +2,10 @@ using UnityEngine;
 using System.Collections;
 public class BasePlant : MonoBehaviour
 {
+    
+    [Header("Common Components")]
     [SerializeField]
-    public Health health;
+    protected Health health;
     public Health Health => health;
     [SerializeField]
     public Animator animator;
@@ -15,7 +17,7 @@ public class BasePlant : MonoBehaviour
         set { currentStep = value; }
     }
     protected bool isActive;
-    public bool IsActive
+    public virtual bool IsActive
     {
         set
         {

@@ -9,6 +9,9 @@ public class Health : MonoBehaviour
     private Slider healthBar;
     [SerializeField]
     private UnityEvent onDie;
+    [SerializeField]
+
+    private UnityEvent onDamaged;
     public float CurrentHealth => currentHealth;
 
     public void InitializeHealth(float health)
@@ -21,7 +24,7 @@ public class Health : MonoBehaviour
     {
         if (healthBar != null)
         {
-        healthBar.value = currentHealth / initialHealth;
+            healthBar.value = currentHealth / initialHealth;
         }
     }
     public void TakeDamage(float damage)
@@ -32,6 +35,10 @@ public class Health : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+        }
+        else
+        {
+            onDamaged?.Invoke();
         }
     }
     public void Die()
