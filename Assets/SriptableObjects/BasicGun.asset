@@ -26,5 +26,5 @@ MonoBehaviour:
   - soundName: Die
     animationName: Die
     actionKey: 5
-  fireRate: 2
+  fireRate: 0.5
   range: 5000

@@ -9,25 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d8c76e47ba7f84f80da5d26e1b6d80, type: 3}
-  m_Name: Flower
+  m_Script: {fileID: 11500000, guid: 273c5a2603f876145989df18a3bd5ebe, type: 3}
+  m_Name: BasicGunV2
   m_EditorClassIdentifier: 
   maxHealth: 100
   actionAssets:
   - soundName: 
     animationName: Idle
     actionKey: 0
-  - soundName: 
+  - soundName: AppearGV2
     animationName: Appear
     actionKey: 4
-  - soundName: 
+  - soundName: ShootGV2
+    animationName: Shoot
+    actionKey: 2
+  - soundName: DieGV2
     animationName: Die
     actionKey: 5
-  - soundName: 
+  - soundName: HitGV2
     animationName: Hit
     actionKey: 3
-  - soundName: Hit
-    animationName: Hit
-    actionKey: 2
-  spawnCoinTime: 15
-  coinAmount: 3
+  fireRate: 1.5
+  range: 2500

@@ -10,34 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44db8e6bc4673194382a8fb95e726655, type: 3}
-  m_Name: Zombie
+  m_Name: ZombieV2
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 150
   actionAssets:
   - soundName: 
     animationName: Idle
     actionKey: 0
   - soundName: 
-    animationName: Zombie Walking
+    animationName: Walk
     actionKey: 1
-  - soundName: zombie_attack
+  - soundName: AttackZV2
     animationName: Attack
     actionKey: 2
-  - soundName: 
-    animationName: Zombie Hit Reaction
+  - soundName: HitZV2
+    animationName: Hit
     actionKey: 3
-  - soundName: zombie_die
-    animationName: Zombie Idle
+  - soundName: DieZV2
+    animationName: Die
     actionKey: 5
-  - soundName: zombie_appear
+  - soundName: AppearZV2
     animationName: Appear
     actionKey: 4
-  - soundName: zombie_win
+  - soundName: 
     animationName: Zombie Dance
     actionKey: 6
-  attackRange: 250
+  attackRange: 150
   timeBetweenAttacks: 0.15
   attackDuration: 1.5
-  speed: 350
+  speed: 175
   damage: 20
-  enemyName: Zombie
+  enemyName: ZombieV2
