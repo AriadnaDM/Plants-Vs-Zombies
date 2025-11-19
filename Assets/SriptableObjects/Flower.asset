@@ -17,17 +17,17 @@ MonoBehaviour:
   - soundName: 
     animationName: Idle
     actionKey: 0
-  - soundName: 
+  - soundName: AppearFlower
     animationName: Appear
     actionKey: 4
-  - soundName: 
+  - soundName: DieFlower
     animationName: Die
     actionKey: 5
-  - soundName: 
+  - soundName: HitFlower
     animationName: Hit
     actionKey: 3
-  - soundName: Hit
-    animationName: Hit
+  - soundName: AttackFlower
+    animationName: Attack
     actionKey: 2
-  spawnCoinTime: 15
+  spawnCoinTime: 5
   coinAmount: 3
