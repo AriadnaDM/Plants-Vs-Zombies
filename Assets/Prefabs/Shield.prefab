@@ -405,6 +405,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDamaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6976944681690033353
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 087826dfe465f1a4b8d21bb6f635dbb4, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5804167533092543878, guid: 087826dfe465f1a4b8d21bb6f635dbb4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

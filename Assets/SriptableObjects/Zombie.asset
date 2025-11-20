@@ -18,16 +18,16 @@ MonoBehaviour:
     animationName: Idle
     actionKey: 0
   - soundName: 
-    animationName: Zombie Walking
+    animationName: Walk
     actionKey: 1
-  - soundName: zombie_attack
+  - soundName: Attack
     animationName: Attack
     actionKey: 2
-  - soundName: 
-    animationName: Zombie Hit Reaction
+  - soundName: Hit
+    animationName: Hit
     actionKey: 3
   - soundName: zombie_die
-    animationName: Zombie Idle
+    animationName: Die
     actionKey: 5
   - soundName: zombie_appear
     animationName: Appear

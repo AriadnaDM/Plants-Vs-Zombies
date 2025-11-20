@@ -23,9 +23,6 @@ MonoBehaviour:
   - soundName: DieFlower
     animationName: Die
     actionKey: 5
-  - soundName: HitFlower
-    animationName: Hit
-    actionKey: 3
   - soundName: AttackFlower
     animationName: Attack
     actionKey: 2
