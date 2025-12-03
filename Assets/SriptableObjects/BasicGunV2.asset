@@ -29,5 +29,5 @@ MonoBehaviour:
   - soundName: HitGV2
     animationName: Hit
     actionKey: 3
-  fireRate: 1.5
-  range: 2500
+  fireRate: 2
+  range: 3500

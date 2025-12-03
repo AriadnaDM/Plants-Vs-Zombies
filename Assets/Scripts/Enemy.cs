@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Events;
+
 public class Enemy : MonoBehaviour
 {
     [SerializeField]
@@ -21,12 +22,15 @@ public class Enemy : MonoBehaviour
     private Coroutine attackCoroutine;
     private Health targetHealth;
     private Collider collider;
+    private bool isActive = false;
     private void Awake()
     {
         collider = GetComponent<Collider>();
     }
     private void OnEnable()
     {
+        isActive = true;
+        collider.enabled = true;
         health.InitializeHealth(enemyData.maxHealth);
         StartLooking();
         //SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Appear));
@@ -54,7 +58,7 @@ public class Enemy : MonoBehaviour
     }
     private IEnumerator Attack()
     {
-        while (targetHealth.CurrentHealth > 0)
+        while (isActive && targetHealth != null && targetHealth.CurrentHealth > 0)
         {
             SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Attack));
             animator.Play(enemyData.GetAnimationName(ActionKey.Attack), 0,0f);
@@ -62,13 +66,19 @@ public class Enemy : MonoBehaviour
             onAttackTarget?.Invoke(targetHealth.transform);
             SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Hit));
             targetHealth.TakeDamage(enemyData.damage);
+            if(targetHealth.CurrentHealth <= 0)
+            {
+                break;
+            }
             yield return new WaitForSeconds(enemyData.timeBetweenAttacks);
         }
+        targetHealth = null;
         attackCoroutine = null;
         StartLooking();
     }
     public void Die()
     {
+        isActive = false;
         collider.enabled = false;
         SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Die));
         StartCoroutine(DieRoutine());
@@ -83,6 +93,17 @@ public class Enemy : MonoBehaviour
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         onDie?.Invoke();
         gameObject.SetActive(false);
+    }
+    public void Win()
+    {
+        isActive = false;
+        collider.enabled = false;
+        if(attackCoroutine != null)
+        {
+            StopCoroutine(attackCoroutine);
+        }
+        animator.Play(enemyData.GetAnimationName(ActionKey.Win));
+        SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Win));
     }
 }
    

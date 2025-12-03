@@ -1933,7 +1933,7 @@ MonoBehaviour:
   enemiesLayer:
     serializedVersion: 2
     m_Bits: 128
-  raycastOffset: 1
+  raycastOffset: 1500
 --- !u!1 &8064234508840235210
 GameObject:
   m_ObjectHideFlags: 0

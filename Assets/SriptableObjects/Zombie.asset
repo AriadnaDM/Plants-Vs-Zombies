@@ -33,9 +33,9 @@ MonoBehaviour:
     animationName: Appear
     actionKey: 4
   - soundName: zombie_win
-    animationName: Zombie Dance
+    animationName: Win
     actionKey: 6
-  attackRange: 250
+  attackRange: 800
   timeBetweenAttacks: 0.15
   attackDuration: 1.5
   speed: 350
