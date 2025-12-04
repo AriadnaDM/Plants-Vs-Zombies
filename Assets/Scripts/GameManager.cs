@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.Events;
+
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
     private GameData gameData;
     [SerializeField]
     private EnemyManager enemyManager;
+    [SerializeField]
+    private PlantManager plantManager;
     [SerializeField]
     private UnityEvent onWinGame;
     [SerializeField]
@@ -15,6 +18,7 @@ public class GameManager : MonoBehaviour
         LevelData currentLevel = gameData.levels[gameData.currentLevelIndex];
         enemyManager.SetEnemiesToSpawn(currentLevel.enemiesToSpawn);
         enemyManager.StartSpawningEnemies();
+        plantManager.SetAvailablePlants(currentLevel.availablePlants);
     }
     public void WinGame()
     {
