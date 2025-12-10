@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Map
-  fadeAnimator: {fileID: 0}
+  fadeAnimator: {fileID: 881994928}
   fadeAnimationName: FadeOut
   onSceneLoad:
     m_PersistentCalls:
