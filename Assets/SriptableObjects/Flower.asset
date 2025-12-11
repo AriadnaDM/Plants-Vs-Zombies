@@ -26,5 +26,8 @@ MonoBehaviour:
   - soundName: AttackFlower
     animationName: Attack
     actionKey: 2
+  - soundName: HitFlower
+    animationName: Hit
+    actionKey: 3
   spawnCoinTime: 5
   coinAmount: 3

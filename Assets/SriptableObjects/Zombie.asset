@@ -23,7 +23,7 @@ MonoBehaviour:
   - soundName: Attack
     animationName: Attack
     actionKey: 2
-  - soundName: Hit
+  - soundName: hitz
     animationName: Hit
     actionKey: 3
   - soundName: zombie_die

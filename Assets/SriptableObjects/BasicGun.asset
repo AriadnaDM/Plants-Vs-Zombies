@@ -17,14 +17,17 @@ MonoBehaviour:
   - soundName: 
     animationName: Idle
     actionKey: 0
-  - soundName: Appear
-    animationName: 
+  - soundName: AppearG
+    animationName: Appear
     actionKey: 4
   - soundName: Shoot
     animationName: Shoot
     actionKey: 2
-  - soundName: Die
+  - soundName: DIEnt
     animationName: Die
     actionKey: 5
+  - soundName: Hit2
+    animationName: Hit
+    actionKey: 3
   fireRate: 1
   range: 5000
