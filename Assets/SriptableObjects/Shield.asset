@@ -17,7 +17,7 @@ MonoBehaviour:
   - soundName: 
     animationName: Idle
     actionKey: 0
-  - soundName: Appear
+  - soundName: NUTTY
     animationName: Appear
     actionKey: 4
   - soundName: 'Hit '

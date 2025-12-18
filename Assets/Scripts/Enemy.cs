@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        if (!isAttacking && health.CurrentHealth > 0)
+        if (isActive && !isAttacking && health.CurrentHealth > 0)
         {
             transform.Translate(Vector3.left * enemyData.speed * Time.deltaTime);
             Vector3 forward = transform.TransformDirection(Vector3.left);
